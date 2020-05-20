@@ -4,6 +4,7 @@
  * @returns {function} - function-getter which allow get value from object by set path
  */
 export function createGetter(path) {
+
  /* 1 вариант
  return function(arg) {
     const arr = path.split('.');

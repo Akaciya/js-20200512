@@ -22,9 +22,11 @@ describe('objects-arrays-intro-to-testing/create-getter', () => {
     };
     const getter1 = createGetter('category.foo');
     const getter2 = createGetter('category.bar');
+    const getter3 = createGetter('category.foo.bar');
 
     expect(getter1(obj)).toBeUndefined();
     expect(getter2(obj)).toBeUndefined();
+    expect(getter3(obj)).toBeUndefined();
   });
 
   it('gets obj.property', () => {

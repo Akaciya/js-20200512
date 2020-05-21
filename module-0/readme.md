@@ -27,3 +27,4 @@
 - [Конструкция "switch"](https://learn.javascript.ru/switch)  
 - [Функции](https://learn.javascript.ru/function-basics)  
 - Задача: [Перепишите функцию, используя оператор '?' или '||'](https://learn.javascript.ru/task/rewrite-function-question-or) 
+merge с мастер репозиторием с гитхаба git pull https://github.com/dosandk/js-20200512.git master

@@ -84,7 +84,7 @@ export default class SortableTable {
       itemTitleHeader.textContent = `${arr[index].title}`;
       sortableTableCell.append(itemTitleHeader);
       //sortableTableCell.setAttribute('data-name', arr[index].id);
-      sortableTableCell.setAttribute('data-sortable', `${arr[index]}.sortable`); //`${}` иначе тесты не проходят
+      sortableTableCell.setAttribute('data-sortable', `${arr[index].sortable}`);
       if (`${arr[index]}.sortable`) {
         sortableTableCell.append(this.arrowSorting)
       }

@@ -135,7 +135,7 @@ export default class SortableTable {
       'header': this.headerTemplate,
       'body': this.bodyTemplate,
     };
-    this.element.append(...Object.values(this.subElements));
+    this.element.append(...Object.values(this.subElements)); //зачем тестам subElements ?
   }
 
   remove() {

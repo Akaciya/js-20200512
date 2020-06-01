@@ -9,18 +9,22 @@ export default class SortableTable {
   } = {}) {
     this.headersConfig = headersConfig;
     this.data = data;
-
     this.render();
+    this.eventColumnSorting();
   }
+
 
   getTableHeader() {
     return `<div data-element="header" class="sortable-table__header sortable-table__row">
       ${this.headersConfig.map(item => this.getHeaderRow(item)).join('')}</div>`;
   }
 
-  getHeaderRow({id, title, sortable}) {
+  getHeaderRow({id, title, sortable, order = ''}) {
+    if (id === 'title') {
+      order = 'desc';
+    }
     return `
-      <div class="sortable-table__cell" data-id="${id}" data-sortable="${sortable}">
+      <div class="sortable-table__cell" data-id="${id}" data-sortable="${sortable}" data-order="${order}">
         <span>${title}</span>
         ${this.getHeaderSortingArrow()}
       </div>
@@ -42,7 +46,7 @@ export default class SortableTable {
   }
 
   getTableRows(data) {
-    return data.map(item => `
+      return data.map(item => `
       <div class="sortable-table__row">
         ${this.getTableRow(item, data)}
       </div>`
@@ -68,7 +72,7 @@ export default class SortableTable {
     return `
       <div class="sortable-table">
         ${this.getTableHeader()}
-        ${this.getTableBody(data)}
+        ${this.getTableBody(this.sortData('title', 'desc'))}
       </div>`;
   }
 
@@ -78,7 +82,6 @@ export default class SortableTable {
     wrapper.innerHTML = this.getTable(this.data);
 
     const element = wrapper.firstElementChild;
-
     this.element = element;
     this.subElements = this.getSubElements(element);
   }
@@ -117,6 +120,24 @@ export default class SortableTable {
       }
     });
   }
+
+  eventColumnSorting() {
+    const allColumns = this.element.querySelectorAll('.sortable-table__cell[data-id]');
+    //button.addEventListener('click', clickHandler);
+    //this.headersConfig.forEach((item) => item.addEventListener(`click`, clickHandler));
+    //allColumns.forEach( (item) => item.addEventListener(`click`, this.handleEvent));
+
+    allColumns.forEach( (item) => item.addEventListener(`click`, (event) =>{
+      let fieldValue =  item.dataset.id;
+      if (item.dataset.order === 'asc') {
+        item.dataset.order = 'desc';
+      } else {
+        item.dataset.order = 'asc';
+      }
+      this.sort(fieldValue, item.dataset.order);
+    }));
+  };
+
 
   getSubElements(element) {
     const elements = element.querySelectorAll('[data-element]');

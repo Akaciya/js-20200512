@@ -5,12 +5,14 @@ export default class SortableTable {
   data = [];
 
   constructor(headersConfig, {
-    data = []
+    data = [],
+    sorted = {},
   } = {}) {
     this.headersConfig = headersConfig;
     this.data = data;
+    this.sorted = sorted;
     this.render();
-    this.eventColumnSorting();
+    this.initEventListeners();
   }
 
 
@@ -20,8 +22,8 @@ export default class SortableTable {
   }
 
   getHeaderRow({id, title, sortable, order = ''}) {
-    if (id === 'title') {
-      order = 'desc';
+    if (id === this.sorted.id) {
+      order = this.sorted.order;
     }
     return `
       <div class="sortable-table__cell" data-id="${id}" data-sortable="${sortable}" data-order="${order}">
@@ -72,7 +74,7 @@ export default class SortableTable {
     return `
       <div class="sortable-table">
         ${this.getTableHeader()}
-        ${this.getTableBody(this.sortData('title', 'desc'))}
+        ${this.getTableBody(this.sortData(this.sorted.id, this.sorted.order))}
       </div>`;
   }
 
@@ -104,6 +106,17 @@ export default class SortableTable {
   sortData(field, order) {
     const arr = [...this.data];
     const column = this.headersConfig.find(item => item.id === field);
+
+    // примерно как-то так для custom, но это может неправильно ?
+    this.customSorting = (a, b) => {
+      if (typeof a[field] === "boolean") {
+        return a[field] - b[field];
+      }
+      if (typeof a[field] === "string") {
+        return a[field].localeCompare(b[field], 'ru');
+      }
+    };
+
     const {sortType, customSorting} = column;
     const direction = order === 'asc' ? 1 : -1;
 
@@ -114,14 +127,14 @@ export default class SortableTable {
         case 'string':
           return direction * a[field].localeCompare(b[field], 'ru');
         case 'custom':
-          return direction * customSorting(a, b);
+          return direction * this.customSorting(a, b);
         default:
           return direction * (a[field] - b[field]);
       }
     });
   }
 
-  eventColumnSorting() {
+  initEventListeners() {
     const allColumns = this.element.querySelectorAll('.sortable-table__cell[data-id]');
     //button.addEventListener('click', clickHandler);
     //this.headersConfig.forEach((item) => item.addEventListener(`click`, clickHandler));
@@ -136,6 +149,7 @@ export default class SortableTable {
       }
       this.sort(fieldValue, item.dataset.order);
     }));
+    //allColumns.forEach( (item) => item.addEventListener(`click`, this.handleEvent)); // не получилось сделать отдельно фунцию калбека
   };
 
 

@@ -19,7 +19,7 @@
       template: data => {
         return `
           <div class="sortable-table__cell">
-            <img class="sortable-table-image" alt="Image" src="${data[0].url}">
+            <img class="sortable-table-image" alt="Image" src="${data[0]}">
           </div>
         `;
       }
@@ -43,14 +43,20 @@
       sortType: 'number'
     },
     {
-      id: 'sales',
-      title: 'Sales',
+      id: 'enabled',
+      title: 'Status',
       sortable: true,
-      sortType: 'number'
+      sortType: 'custom'
     },
   ];
 
-  const sortableTable = new SortableTable(header, { data });
+  const sortableTable = new SortableTable(header, {
+    data,
+    sorted: {
+      id: 'quantity',
+      order: 'asc'
+    }
+  });
 
   root.append(sortableTable.element);
 </script>

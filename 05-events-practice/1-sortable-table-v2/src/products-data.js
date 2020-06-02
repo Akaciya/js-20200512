@@ -1,718 +1,333 @@
 export default [
   {
-    'id': 'soska-(pustyshka)-nuk-10729357',
-    'title': 'Соска (пустышка) NUK 10729357',
-    'description': 'кольцо; Материал: силикон; Форма: ортодонтическая; Возраст: 0m+; Тип: пустышка',
-    'quantity': 20,
-    'subcategory': {
-      'id': 'kormlenie-i-gigiena',
-      'title': 'Кормление и гигиена',
-      'count': 18,
-      'category': {
-        'id': 'detskie-tovary-i-igrushki',
-        'title': 'Детские товары и игрушки',
-        'count': 83,
-        'weight': 1
-      },
-      'weight': 2
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/872403.jpg',
-        'source': '872403.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/y1/f60itzsrly1.jpg',
-        'source': 'f60itzsrly1.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/r1/f60iuj3g7r1.jpg',
-        'source': 'f60iuj3g7r1.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/11/f60iuorc111.jpg',
-        'source': 'f60iuorc111.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/41/f60iur65k41.jpg',
-        'source': 'f60iur65k41.jpg'
-      }
+    "id": "kolyaska-adamex-barletta-2-in-1",
+    "title": "Коляска Adamex Barletta 2 in 1",
+    "description": "Универсальная модель, которая с легкостью заменит родителям сразу две коляски — люльку для новорожденных и прогулочную для детей в возрасте от 6 месяцев. Коляска Adamex Barletta прекрасно подходит для ежедневного использования в любую пору года. Также в комплектацию входит теплая накидка для ног, дождевик и корзинка для покупок закрытого типа. Родительская ручка регулируется по высоте, есть подстаканник. В прогулочном блоке предусмотрен пятиточечный ремень безопасности, а люлька оснащена текстильной обшивкой из натуральной ткани, которую можно снимать для очистки. Алюминиевый складной каркас, предусмотрена пружинная система амортизации, колеса большие, надувные. Вес с прогулочным блоком составляет 13,2 кг. <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>4</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">21</span> оценка)</span></div>",
+    "quantity": 42,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": true,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/598194.jpg",
+      "http://mzimg.com/big/o1/et0edczbio1.png",
+      "http://mzimg.com/big/j1/et0ezrohaj1.jpg",
+      "http://mzimg.com/big/k1/et0f0cmh9k1.jpg",
+      "http://mzimg.com/big/h1/et0f0ijl1h1.jpg"
     ],
-    'price': 3,
-    'discount': 0,
-    'sales': 14
+    "price": 354
   },
   {
-    'id': 'tv-tyuner-d-color--dc1301hd',
-    'title': 'ТВ тюнер D-COLOR  DC1301HD',
-    'description': 'Габариты (мм): 132х32х100; Пульт ДУ; USB; HDMI: 1 шт; композитный; Телетекст; Телегид; Time shift; Запись видео; Разрешение видео: 576i, 576p, 720p, 1080i, 1080p; DVB-T2 (эфирное); DVB-T (эфирное); Тип: внешний тюнер ',
-    'quantity': 90,
-    'subcategory': {
-      'id': 'tv-tyunery',
-      'title': 'ТВ тюнеры',
-      'count': 18,
-      'category': {
-        'id': 'tv-i-videotehnika',
-        'title': 'ТВ и видеотехника',
-        'count': 133,
-        'weight': 5
-      },
-      'weight': 4
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/472608.jpg',
-        'source': '472608.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/y1/ellhimqz1y1.jpg',
-        'source': 'ellhimqz1y1.jpg'
-      }
+    "id": "kolyaska-peg-perego-si",
+    "title": "Коляска Peg Perego Si",
+    "description": "Модель вполне можно причислить к среднеуровневым прогулочным коляскам. Удобное сидение располагает 5-точечными ремнями безопасности, съемным защитным бампером и регулируемым по высоте капюшоном с небольшим карманом для мелочей. Для регулировки угла наклона спинки предусмотрены 3 положения, что позволит ребенку с комфортном отдохнуть во время прогулки. Модель установлена на резиновые колеса с различной диагональю, передняя пара поворотные (360° с фиксатором), все могут похвастаться шарикоподшипниками. Дополнительно предусмотрен дождевик и подстаканник. <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>5</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">58</span> оценок)</span></div>",
+    "quantity": 73,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": true,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/164281.jpg",
+      "http://mzimg.com/big/n1/fog3r4cebn1.jpg",
+      "http://mzimg.com/big/f1/fog3r4q3cf1.jpg",
+      "http://mzimg.com/big/51/fog3r504w51.jpg",
+      "http://mzimg.com/big/y1/fog3r55tay1.jpg"
     ],
-    'price': 15,
-    'discount': 0,
-    'sales': 13
+    "price": 264
   },
   {
-    'id': 'detskiy-velosiped-lexus-trike-racer-trike',
-    'title': 'Детский велосипед Lexus Trike Racer Trike',
-    'description': 'Вес: 9.5; Габариты: 84х47х105; сигнал/звонок; защитный козырек; ремни безопасности; защитный бампер; сумка для вещей; багажник; Комплектация: крылья; Подставка для ног; Родительская ручка; Колеса: резиновые; Диаметр колес ("): 10; Материал рамы: сталь; Возрастная группа: от 1 до 3 лет; Тип: трехколесный ',
-    'quantity': 91,
-    'subcategory': {
-      'id': 'aktivniy-otdyh-i-ulitsa',
-      'title': 'Активный отдых и улица',
-      'count': 11,
-      'category': {
-        'id': 'detskie-tovary-i-igrushki',
-        'title': 'Детские товары и игрушки',
-        'count': 83,
-        'weight': 1
-      },
-      'weight': 4
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/460399.jpg',
-        'source': '460399.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/21/ekp3a9dbq21.jpeg',
-        'source': 'ekp3a9dbq21.jpeg'
-      },
-      {
-        'url': 'http://mzimg.com/big/o1/ekp3aifo0o1.jpeg',
-        'source': 'ekp3aifo0o1.jpeg'
-      },
-      {
-        'url': 'http://mzimg.com/big/51/ekp3au84n51.jpeg',
-        'source': 'ekp3au84n51.jpeg'
-      },
-      {
-        'url': 'http://mzimg.com/big/01/ekp3b1q3f01.jpeg',
-        'source': 'ekp3b1q3f01.jpeg'
-      }
+    "id": "kolyaska-adamex-barletta-3-in-1",
+    "title": "Коляска Adamex Barletta 3 in 1",
+    "description": "Вес в сборе (кг): 15.1; Ширина сидения (см): 33; Размеры люльки (см): 86x36; Размеры (сложена) (см): 98x60x40; Ширина шасси (см): 60; Размеры (разложена) (см): 106x60x124; Колеса: надувные; Фиксация передних колес; Поворотные колеса; Материал рамы: алюминий; Возможность установки автокресла; Точек опоры: 4 <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>4</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">21</span> оценка)</span></div>",
+    "quantity": 1,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/1220903.jpg",
+      "http://mzimg.com/big/o1/et0edczbio1.png",
+      "http://mzimg.com/big/j1/et0ezrohaj1.jpg",
+      "http://mzimg.com/big/k1/et0f0cmh9k1.jpg",
+      "http://mzimg.com/big/h1/et0f0ijl1h1.jpg"
     ],
-    'price': 53,
-    'discount': 0,
-    'sales': 11
+    "price": 445
   },
   {
-    'id': 'soska-(pustyshka)-philips-scf182/12',
-    'title': 'Соска (пустышка) Philips SCF182/12',
-    'description': 'кольцо; колпачок; Материал: силикон; Форма: ортодонтическая; Возраст: 0m+; Количество (шт): 2; Тип: пустышка',
-    'quantity': 79,
-    'subcategory': {
-      'id': 'kormlenie-i-gigiena',
-      'title': 'Кормление и гигиена',
-      'count': 18,
-      'category': {
-        'id': 'detskie-tovary-i-igrushki',
-        'title': 'Детские товары и игрушки',
-        'count': 83,
-        'weight': 1
-      },
-      'weight': 2
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/1119998.jpg',
-        'source': '1119998.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/v1/fmm4mz10hv1.jpg',
-        'source': 'fmm4mz10hv1.jpg'
-      }
+    "id": "kolyaska-capella-s-803",
+    "title": "Коляска Capella S-803",
+    "description": "Одноместная прогулочная коляска, предназначенная для детей от 6 месяцев до трёх лет. Для тёплого времени года в капюшоне коляски предусмотрена сетчатая вставка, что обеспечивает хорошую вентиляцию, а для зимнего периода – тёплый съёмный матрасик и чехол для ног ребёнка. Наклон спинки сидения регулируется в трёх положениях. Капюшон можно опустить до бампера, что будет актуально во время ветреной погоды. Передние колеса поворотные, предусмотрена возможность фиксации. <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>4</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">17</span> оценок)</span></div>",
+    "quantity": 31,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": true,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/181293.jpg",
+      "http://mzimg.com/big/ii/epltoticdii.jpg",
+      "http://mzimg.com/big/4i/epltoy8404i.jpg",
+      "http://mzimg.com/big/ji/epltp1xxxji.jpg",
+      "http://mzimg.com/big/ti/epltp4walti.jpg"
     ],
-    'price': 9,
-    'discount': 0,
-    'sales': 11
+    "price": 220
   },
   {
-    'id': 'powerbank-akkumulyator-hiper-sp20000',
-    'title': 'Powerbank аккумулятор Hiper SP20000',
-    'description': 'Вес (г): 420; Размеры (мм): 168x22x80; Функции: Материал корпуса: пластик; Комплектные провода (адаптеры): microUSB; Ток заряда 1-го USB порта: 2.1; Тип аккумуляторов: Li-Ion; Емкость (мАч): 20000 ',
-    'quantity': 1,
-    'subcategory': {
-      'id': 'noutbuki-i-aksessuary',
-      'title': 'Ноутбуки и аксессуары',
-      'count': 11,
-      'category': {
-        'id': 'kompyuternaya-tehnika',
-        'title': 'Компьютерная техника',
-        'count': 42,
-        'weight': 2
-      },
-      'weight': 1
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/944502.jpg',
-        'source': '944502.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/51/f8nlfn8te51.jpg',
-        'source': 'f8nlfn8te51.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/71/f8nlfsdcq71.jpg',
-        'source': 'f8nlfsdcq71.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/j1/f8nlfiakij1.jpg',
-        'source': 'f8nlfiakij1.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/c1/f8nlfy7ycc1.jpg',
-        'source': 'f8nlfy7ycc1.jpg'
-      }
+    "id": "kolyaska-capella-s-901",
+    "title": "Коляска Capella S-901",
+    "description": "Трёхколёсная прогулочная коляска, предназначенная для уже умеющих сидеть самостоятельно детей. Одна из наиболее популярных треёхколёсных моделей в линейке Capella. Весит 10,2 кг, а ширина шасси составляет 63 см. Дополнительно в комплектацию коляски S-901 входит дождевик, тёплая накидка для ног и отделение для покупок. Наклон спинки регулируется в трёх положениях, защитный бампер снимается, капюшон опускается вплоть до бортика, практически полностью закрывая ребёнка. Переднее колесо спаренное, поворотное, диаметром 26 см. <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>4</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">78</span> оценок)</span></div>",
+    "quantity": 15,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/181326.jpg",
+      "http://mzimg.com/big/pi/epls9wr7qpi.jpg",
+      "http://mzimg.com/big/7i/eplsa34qm7i.jpg",
+      "http://mzimg.com/big/1i/eplsad6lb1i.jpg",
+      "http://mzimg.com/big/oi/epls9o5qxoi.jpg"
     ],
-    'price': 30,
-    'discount': 0,
-    'sales': 11
+    "price": 210
   },
   {
-    'id': 'elektroduhovka-centek-ct-1532-46',
-    'title': 'Электродуховка Centek CT-1532 46',
-    'description': 'Покрытие камеры: нержавеющая сталь; Открытие дверцы: откидная; автоотключение; таймер; Функции и возможности: гриль; Максимальная температура (°C): 320; Управление: переключатели; Мощность (Вт): 2000; Объем (л): 46',
-    'quantity': 65,
-    'subcategory': {
-      'id': 'kuhnya',
-      'title': 'Кухня',
-      'count': 19,
-      'category': {
-        'id': 'melkaya-bytovaya-tehnika',
-        'title': 'Мелкая бытовая техника',
-        'count': 39,
-        'weight': 4
-      },
-      'weight': 1
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/1300788.jpg',
-        'source': '1300788.jpg'
-      }
+    "id": "kolyaska-peg-perego-pliko-mini",
+    "title": "Коляска Peg Perego Pliko Mini",
+    "description": "Очень лёгкая и компактная в сложенном виде прогулочная коляска для детей от шести месяцев. Модель весит всего 5.7 кг, механизм складывания – трость. Присутствует корзина для покупок. Наклон спинки регулируется в трёх положениях, для регулирования высоты подножки предусмотрено два положения. Пятиточечные ремни безопасности фиксируются единым замком и легко и быстро снимаются. Ширина шасси составляет 49 см, колеса спаренные, диагональю 15 см. <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>4</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">42</span> оценки)</span></div>",
+    "quantity": 10,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/166167.jpg",
+      "http://mzimg.com/big/d6/dnlznldzqd6.jpg",
+      "http://mzimg.com/big/k6/dnlzo7nmgk6.jpg",
+      "http://mzimg.com/big/g6/dnlzn1jwfg6.jpg",
+      "http://fedotka.ru/upload/iblock/8b6/8b6a3f5fbad24fe09e86e2dc02d676a9.jpg"
     ],
-    'price': 81,
-    'discount': 0,
-    'sales': 10
+    "price": 150
   },
   {
-    'id': 'soska-(pustyshka)-happy-baby-15041',
-    'title': 'Соска (пустышка) Happy Baby 15041',
-    'description': 'колпачок; Ручка ниблера: круглая (кольцо); Возраст: 6m+; Тип: силиконовый ниблер',
-    'quantity': 81,
-    'subcategory': {
-      'id': 'kormlenie-i-gigiena',
-      'title': 'Кормление и гигиена',
-      'count': 18,
-      'category': {
-        'id': 'detskie-tovary-i-igrushki',
-        'title': 'Детские товары и игрушки',
-        'count': 83,
-        'weight': 1
-      },
-      'weight': 2
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/1304719.jpg',
-        'source': '1304719.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/k1/fo8c8a74ek1.jpg',
-        'source': 'fo8c8a74ek1.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/i1/fo8c8ac1yi1.jpg',
-        'source': 'fo8c8ac1yi1.jpg'
-      }
+    "id": "kolyaska-baby-care-jogger-cruze",
+    "title": "Коляска Baby Care Jogger Cruze",
+    "description": "Удобное сидение с жесткой регулируемой спинкой, большие надувные колеса и отличная маневренность - вот перечень основных преимуществ модели. В основе устройства находится алюминиевый каркас, точек опоры всего три, переднее колесо сделано поворотным, с фиксирующим механизмом на борту. Есть 5-точечные ремни безопасности, есть отделение для покупок и даже небольшой столик с подстаканником на родительской ручке. Ширина сидения составляет превосходные 42 см. Модель представлена на рынке в различных цветовых решениях. <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>4</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">33</span> оценки)</span></div>",
+    "quantity": 19,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/193761.jpg",
+      "http://mzimg.com/big/ui/epltcsp3jui.jpg",
+      "http://mzimg.com/big/ri/epltcvukpri.jpeg",
+      "http://mzimg.com/big/pi/epltcyn6jpi.jpg",
+      "http://www.tehnostudio.ru/photos/zN2DY3MDQ0LmpwZWcjKiMqIyojNjUxIyojKiMqIzY1MyMqIyojKiNnb9k.jpg"
     ],
-    'price': 3,
-    'discount': 0,
-    'sales': 9
+    "price": 119
   },
   {
-    'id': 'shkolniy-ryukzak-(ranets)-scooli-star-wars-sw13824',
-    'title': 'Школьный рюкзак (ранец) Scooli Star Wars SW13824',
-    'description': 'Вес: 280; мягкие лямки; ортопедическая спинка; жесткий каркас; пенал; Замок: молния; Пол: для мальчиков; Возрастная группа: школьный; Тип: ранец',
-    'quantity': 89,
-    'subcategory': {
-      'id': 'shkolnye-tovary',
-      'title': 'Школьные товары',
-      'count': 16,
-      'category': {
-        'id': 'detskie-tovary-i-igrushki',
-        'title': 'Детские товары и игрушки',
-        'count': 83,
-        'weight': 1
-      },
-      'weight': 6
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/905979.jpg',
-        'source': '905979.jpg'
-      }
+    "id": "kolyaska-bexa-cube-2-in-1",
+    "title": "Коляска Bexa Cube 2 in 1",
+    "description": "Вес в сборе (кг): 13; Размеры люльки (см): 85x35; Размеры (сложена) (см): 84x60x34; Ширина шасси (см): 60; Размеры (разложена) (см): 95x60x110; Колеса: резиновые; Фиксация передних колес; Поворотные колеса; Материал рамы: алюминий; Возможность установки автокресла; Точек опоры: 4; Система амортизации: пружинного типа <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>5</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">2</span> оценки)</span></div>",
+    "quantity": 35,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/951387.jpg",
+      "http://mzimg.com/big/i1/f8yuro1t6i1.jpg",
+      "http://mzimg.com/big/91/f8yurtt3891.jpg",
+      "http://mzimg.com/big/41/f8yusadhr41.jpg",
+      "http://mzimg.com/big/81/f8yusmj8n81.jpg"
     ],
-    'price': 16,
-    'discount': 0,
-    'sales': 9
+    "price": 347
   },
   {
-    'id': 'uborochnaya-mashina-karcher-wv-2-premium',
-    'title': 'Уборочная машина Karcher WV 2 Premium',
-    'description': 'Вес (кг): 0.6; Габариты (см): 32x28x12 ; Бак для отработанного раствора (л): 0.1; Ширина захвата всасывающей балки (см): 28; Управление: ручное; Источник питания: аккумулятор; Тип: оконный',
-    'quantity': 71,
-    'subcategory': {
-      'id': 'uborochnye-mashiny',
-      'title': 'Уборочные машины',
-      'count': 14,
-      'category': {
-        'id': 'krupnaya-bytovaya-tehnika',
-        'title': 'Крупная бытовая техника',
-        'count': 154,
-        'weight': 3
-      },
-      'weight': 13
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/642251.jpg',
-        'source': '642251.jpg'
-      }
+    "id": "kolyaska-chicco-multiway-evo",
+    "title": "Коляска Chicco Multiway Evo",
+    "description": "Одноместная прогулочная коляска-тросточка Chicco Multiway Evo дополнительно комплектуется теплой накидкой для ног и дождевиком, благодаря чему послужит хорошим вариантом для прогулок в теплое время года. Угол наклона спинки и положения подножки регулируются, 5-ти точечные ремни безопасности позволяют надежно закрепить малыша. Широкий капюшон укроет ребенка от непогоды, но благодаря удобному смотровому окошку он все время будет в поле зрения мамы. Пружинная система амортизации с четырьмя точками опоры максимально уменьшает вибрацию блока. Спаренные поворотные колеса изготовлены из пластика, передняя пара фиксируется, что позволяет избежать множества неудобств во время прогулок по пересеченной местности. Также стоит обратить внимание на то, что в сложенном виде изделие занимает минимум места. <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>4</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">7</span> оценок)</span></div>",
+    "quantity": 40,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": true,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/718125.jpg",
+      "http://mzimg.com/big/06/ez9xx697x06.jpg",
+      "http://mzimg.com/big/n6/ez9xxfz7xn6.jpg",
+      "http://mzimg.com/big/m6/ez9xxj1dnm6.jpg",
+      "http://mzimg.com/big/t6/ez9xxm2lft6.jpg"
     ],
-    'price': 68,
-    'discount': 0,
-    'sales': 8
+    "price": 119
   },
   {
-    'id': 'detskiy-velosiped-lexus-trike-racer-trike-air',
-    'title': 'Детский велосипед Lexus Trike Racer Trike Air',
-    'description': 'Вес: 9.5; Габариты: 84х47х105; сигнал/звонок; защитный козырек; ремни безопасности; защитный бампер; сумка для вещей; багажник; Комплектация: крылья; Подставка для ног; Родительская ручка; Колеса: надувные резиновые; Диаметр колес ("): 10; Материал рамы: сталь; Возрастная группа: от 1 до 3 лет; Тип: трехколесный',
-    'quantity': 92,
-    'subcategory': {
-      'id': 'aktivniy-otdyh-i-ulitsa',
-      'title': 'Активный отдых и улица',
-      'count': 11,
-      'category': {
-        'id': 'detskie-tovary-i-igrushki',
-        'title': 'Детские товары и игрушки',
-        'count': 83,
-        'weight': 1
-      },
-      'weight': 4
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/460710.jpg',
-        'source': '460710.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/y1/ekq1hbkory1.jpeg',
-        'source': 'ekq1hbkory1.jpeg'
-      },
-      {
-        'url': 'http://mzimg.com/big/o1/ekq1hl330o1.jpg',
-        'source': 'ekq1hl330o1.jpg'
-      },
-      {
-        'url': 'http://www.sportsbaby.ru/upload/iblock/4cd/4cdd8d3bccf5c6f6298c040c55430b75.jpg',
-        'source': '4cdd8d3bccf5c6f6298c040c55430b75.jpg'
-      },
-      {
-        'url': 'http://www.sportsbaby.ru/upload/iblock/eb3/eb34534acfcf0d0f89d86b5c368d71d5.jpg',
-        'source': 'eb34534acfcf0d0f89d86b5c368d71d5.jpg'
-      }
+    "id": "kolyaska-peg-perego-book-cross",
+    "title": "Коляска Peg Perego Book Cross",
+    "description": "Вес в сборе (кг): 10; Размеры (сложена) (см): 47x63x92; Ширина шасси (см): 63; Размеры (разложена) (см): 114x63x107; Колеса: резиновые; Фиксация передних колес; Поворотные колеса; Материал рамы: алюминий; Ручной стояночный тормоз; Точек опоры: 3; Система амортизации: пружинного типа; Защитный бампер <div rel=\"v:rating\"><span typeof=\"v:Rating\">Рейтинг модели: <span property='v:value'>4</span> из <span property=\"v:best\">5</span> (<span property=\"v:count\">7</span> оценок)</span></div>",
+    "quantity": 54,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "progulki-i-detskaya-komnata",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/710935.jpg",
+      "http://mzimg.com/big/m2/eyw40px91m2.jpg",
+      "http://mzimg.com/big/32/eyw426dtq32.jpg",
+      "http://mzimg.com/big/k2/eyw42bspik2.jpg",
+      "http://mzimg.com/big/22/eyw42end522.jpg"
     ],
-    'price': 64,
-    'discount': 0,
-    'sales': 8
+    "price": 424
   },
   {
-    'id': 'myasorubka-mig-m-102.2',
-    'title': 'Мясорубка Mig M 102.2',
-    'description': 'Реверс; Материал корпуса: пластик; Пиковая мощность (Вт): 1000; Номинальная мощность (Вт): 300',
-    'quantity': 49,
-    'subcategory': {
-      'id': 'kuhnya',
-      'title': 'Кухня',
-      'count': 19,
-      'category': {
-        'id': 'melkaya-bytovaya-tehnika',
-        'title': 'Мелкая бытовая техника',
-        'count': 39,
-        'weight': 4
-      },
-      'weight': 1
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg/820218.jpg',
-        'source': '820218.jpg'
-      }
+    "id": "soska-(pustyshka)-happy-baby-15009",
+    "title": "Соска (пустышка) Happy Baby 15009",
+    "description": "колпачок; Ручка ниблера: Y-образная; Возраст: 6m+; Тип: силиконовый ниблер",
+    "quantity": 42,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/1202744.jpg",
+      "http://mzimg.com/big/91/fjfmlopyo91.jpg",
+      "http://mzimg.com/big/e1/fjfmloxuge1.jpg",
+      "http://mzimg.com/big/r1/fjfmlp7gur1.jpg",
+      "http://mzimg.com/big/e1/fjfmlpdd0e1.jpg"
     ],
-    'price': 53,
-    'discount': 0,
-    'sales': 8
+    "price": 6
   },
   {
-    'id': 'mediapleer-rombica-smart-box-4k',
-    'title': 'Медиаплеер Rombica Smart Box 4K',
-    'description': 'Вес (кг): 0.2; Габариты (мм): 114x27x107; Охлаждение: пассивная (без вентилятора); Входы: LAN; Выходы: композитный; Wi-Fi; Мультимедиа: картридер; социальные сети; фото-сервисы; видео-сервисы; Онлайн радио; Онлайн ТВ; IPTV; BitTorrent клиент; Функции/возможности: Интернет-браузер; Объем накопителя (Гб): 8 ',
-    'quantity': 65,
-    'subcategory': {
-      'id': 'mediapleery',
-      'title': 'Медиаплееры',
-      'count': 19,
-      'category': {
-        'id': 'tv-i-videotehnika',
-        'title': 'ТВ и видеотехника',
-        'count': 133,
-        'weight': 5
-      },
-      'weight': 3
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/863141.jpg',
-        'source': '863141.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/41/f5lj562o841.jpg',
-        'source': 'f5lj562o841.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/z1/f5lj5ccrfz1.jpg',
-        'source': 'f5lj5ccrfz1.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/y1/f5lj5hbedy1.jpg',
-        'source': 'f5lj5hbedy1.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/n1/f5lj5pgrrn1.jpg',
-        'source': 'f5lj5pgrrn1.jpg'
-      }
+    "id": "soska-(pustyshka)-happy-baby-15041",
+    "title": "Соска (пустышка) Happy Baby 15041",
+    "description": "колпачок; Ручка ниблера: круглая (кольцо); Возраст: 6m+; Тип: силиконовый ниблер",
+    "quantity": 69,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/1304719.jpg",
+      "http://mzimg.com/big/k1/fo8c8a74ek1.jpg",
+      "http://mzimg.com/big/i1/fo8c8ac1yi1.jpg"
     ],
-    'price': 95,
-    'discount': 0,
-    'sales': 8
+    "price": 3
   },
   {
-    'id': 'soska-(pustyshka)-medela-calma',
-    'title': 'Соска (пустышка) Medela Calma',
-    'description': 'колпачок; Материал: силикон; Размер горлышка бутылки: широкий; Скорость потока: регулируемая; Возраст: 0m+; Тип: соска',
-    'quantity': 10,
-    'subcategory': {
-      'id': 'kormlenie-i-gigiena',
-      'title': 'Кормление и гигиена',
-      'count': 18,
-      'category': {
-        'id': 'detskie-tovary-i-igrushki',
-        'title': 'Детские товары и игрушки',
-        'count': 83,
-        'weight': 1
-      },
-      'weight': 2
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/890067.jpg',
-        'source': '890067.jpg'
-      }
+    "id": "soska-(pustyshka)-medela-calma",
+    "title": "Соска (пустышка) Medela Calma",
+    "description": "колпачок; Материал: силикон; Размер горлышка бутылки: широкий; Скорость потока: регулируемая; Возраст: 0m+; Тип: соска",
+    "quantity": 21,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/890067.jpg"
     ],
-    'price': 12,
-    'discount': 0,
-    'sales': 8
+    "price": 12
   },
   {
-    'id': 'detskiy-velosiped-lexus-trike-grand',
-    'title': 'Детский велосипед Lexus Trike Grand',
-    'description': 'Вес: 14; сигнал/звонок; защитный козырек; ремни безопасности; защитный бампер; сумка для вещей; багажник; Комплектация: крылья; Подставка для ног; Родительская ручка; Колеса: резиновые; Возрастная группа: от 1 до 3 лет; Тип: трехколесный',
-    'quantity': 59,
-    'subcategory': {
-      'id': 'aktivniy-otdyh-i-ulitsa',
-      'title': 'Активный отдых и улица',
-      'count': 11,
-      'category': {
-        'id': 'detskie-tovary-i-igrushki',
-        'title': 'Детские товары и игрушки',
-        'count': 83,
-        'weight': 1
-      },
-      'weight': 4
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/365751.jpg',
-        'source': '365751.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/01/ee68nqlu401.jpg',
-        'source': 'ee68nqlu401.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/v1/ee68o2uqpv1.jpg',
-        'source': 'ee68o2uqpv1.jpg'
-      },
-      {
-        'url': 'http://www.sportsbaby.ru/upload/iblock/860/860ba36b530f59f052c6b34a328bd04f.jpg',
-        'source': '860ba36b530f59f052c6b34a328bd04f.jpg'
-      },
-      {
-        'url': 'http://s.techport.ru/_mod_files/ce_images/eshop/generated/p593608-0mw_150x150_pc.jpg',
-        'source': 'p593608-0mw_150x150_pc.jpg'
-      }
+    "id": "soska-(pustyshka)-philips-scf186/23",
+    "title": "Соска (пустышка) Philips SCF186/23",
+    "description": "кольцо; колпачок; Материал: силикон; Форма: ортодонтическая; Возраст: 18m+; Количество (шт): 2; Тип: пустышка",
+    "quantity": 88,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/1120837.jpg",
+      "http://mzimg.com/big/q1/ffz0e3lpfq1.jpg",
+      "http://mzimg.com/big/x1/ffz0e3rhax1.jpg",
+      "http://mzimg.com/big/r1/fmm4ccqnsr1.jpg",
+      "http://mzimg.com/big/r1/fmm4cd6j4r1.jpg"
     ],
-    'price': 63,
-    'discount': 0,
-    'sales': 7
+    "price": 8
   },
   {
-    'id': 'powerbank-akkumulyator-hiper-rp10000',
-    'title': 'Powerbank аккумулятор Hiper RP10000',
-    'description': 'Размеры (мм): 100х70х20.5; Функции: Материал корпуса: пластик; Комплектные провода (адаптеры): microUSB; Ток заряда 1-го USB порта: 2.1; Тип аккумуляторов: Li-Ion; Емкость (мАч): 10000 ',
-    'quantity': 48,
-    'subcategory': {
-      'id': 'noutbuki-i-aksessuary',
-      'title': 'Ноутбуки и аксессуары',
-      'count': 11,
-      'category': {
-        'id': 'kompyuternaya-tehnika',
-        'title': 'Компьютерная техника',
-        'count': 42,
-        'weight': 2
-      },
-      'weight': 1
-    },
-    'status': 0,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/886464.jpg',
-        'source': '886464.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/g1/f6itxxtt9g1.jpg',
-        'source': 'f6itxxtt9g1.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/31/f6ity0yj431.jpg',
-        'source': 'f6ity0yj431.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/d1/f6itxu72xd1.jpg',
-        'source': 'f6itxu72xd1.jpg'
-      },
-      {
-        'url': 'http://www.komus.ru/photo/_full/702770_1.jpg',
-        'source': '702770_1.jpg'
-      }
+    "id": "soska-(pustyshka)-happy-baby-13015",
+    "title": "Соска (пустышка) Happy Baby 13015",
+    "description": "кольцо; Материал: силикон; Форма: ортодонтическая; Возраст: 0m+; Тип: пустышка",
+    "quantity": 3,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/1304722.jpg",
+      "http://mzimg.com/big/b1/fo8ccl82gb1.jpg",
+      "http://mzimg.com/big/y1/fo8cclcx0y1.jpg",
+      "http://mzimg.com/big/y1/fo8cclit2y1.jpg"
     ],
-    'price': 14,
-    'discount': 0,
-    'sales': 7
+    "price": 2
   },
   {
-    'id': 'monitor-aoc-i2769vm',
-    'title': 'Монитор AOC I2769Vm',
-    'description': 'Габариты (мм): 622х449х130; Настенное крепление VESA: 75x75 мм; Поддержка MHL; Разъемы (дополнительно): Встроенные динамики; HDMI: 2 шт; Display Port; Подключение: VGA; Динамическая контрастность: 50 000 000:1; Статическая контрастность: 1 000:1; Яркость (кд/м2): 250; Угол обзора гор.: 178; Угол обзора верт.: 178 ',
-    'quantity': 13,
-    'subcategory': {
-      'id': 'monitory',
-      'title': 'Мониторы',
-      'count': 11,
-      'category': {
-        'id': 'kompyuternaya-tehnika',
-        'title': 'Компьютерная техника',
-        'count': 42,
-        'weight': 2
-      },
-      'weight': 2
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/297777.jpg',
-        'source': '297777.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/22/ej8m6ptac22.jpg',
-        'source': 'ej8m6ptac22.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/g2/ej8m6zqprg2.jpg',
-        'source': 'ej8m6zqprg2.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/p2/ej8m74jyzp2.jpg',
-        'source': 'ej8m74jyzp2.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/r2/ej8m6u02pr2.jpg',
-        'source': 'ej8m6u02pr2.jpg'
-      }
+    "id": "soska-(pustyshka)-happy-baby-13005",
+    "title": "Соска (пустышка) Happy Baby 13005",
+    "description": "цепочка; кольцо; Материал: силикон; Форма: круглая; Возраст: 0m+; Тип: пустышка",
+    "quantity": 68,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": true,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/880954.jpg",
+      "http://mzimg.com/big/y1/f69tyvnjby1.jpg",
+      "http://mzimg.com/big/61/fmladczd761.jpg",
+      "http://mzimg.com/big/n1/fmladdd04n1.jpg"
     ],
-    'price': 200,
-    'discount': 20,
-    'sales': 7
+    "price": 4
   },
   {
-    'id': 'soska-(pustyshka)-tommee-tippee-43338855',
-    'title': 'Соска (пустышка) Tommee Tippee 43338855',
-    'description': 'кольцо; Материал: силикон; Форма: ортодонтическая; Возраст: 6m+; Тип: пустышка',
-    'quantity': 28,
-    'subcategory': {
-      'id': 'kormlenie-i-gigiena',
-      'title': 'Кормление и гигиена',
-      'count': 18,
-      'category': {
-        'id': 'detskie-tovary-i-igrushki',
-        'title': 'Детские товары и игрушки',
-        'count': 83,
-        'weight': 1
-      },
-      'weight': 2
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/1304516.jpg',
-        'source': '1304516.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/t1/fo8ap063bt1.jpg',
-        'source': 'fo8ap063bt1.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/h1/fo8ap0i2dh1.jpg',
-        'source': 'fo8ap0i2dh1.jpg'
-      },
-      {
-        'url': 'http://mzimg.com/big/j1/fo8ap0la9j1.jpg',
-        'source': 'fo8ap0la9j1.jpg'
-      }
+    "id": "soska-(pustyshka)-philips-scf172/70",
+    "title": "Соска (пустышка) Philips SCF172/70",
+    "description": "кольцо; колпачок; Материал: силикон; Форма: ортодонтическая; Возраст: 6m+; Количество (шт): 2; Тип: пустышка",
+    "quantity": 42,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/868515.jpg",
+      "http://mzimg.com/big/e1/f5um53799e1.jpg",
+      "http://mzimg.com/big/01/f5um58kx601.jpg",
+      "http://mzimg.com/big/r1/f5um5bzhqr1.jpg",
+      "http://mzimg.com/big/y1/f5um5gmk0y1.jpg"
     ],
-    'price': 6,
-    'discount': 0,
-    'sales': 7
+    "price": 10
   },
   {
-    'id': 'dvd/blu-ray-pleer-sony-dvp-sr320',
-    'title': 'DVD/Blu-ray плеер Sony DVP-SR320',
-    'description': '',
-    'quantity': 81,
-    'subcategory': {
-      'id': 'dvd/blu-ray-pleery',
-      'title': 'DVD/Blu-ray плееры',
-      'count': 20,
-      'category': {
-        'id': 'tv-i-videotehnika',
-        'title': 'ТВ и видеотехника',
-        'count': 133,
-        'weight': 5
-      },
-      'weight': 10
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/167313.jpg',
-        'source': '167313.jpg'
-      }
+    "id": "soska-(pustyshka)-tommee-tippee-43338855",
+    "title": "Соска (пустышка) Tommee Tippee 43338855",
+    "description": "кольцо; Материал: силикон; Форма: ортодонтическая; Возраст: 6m+; Тип: пустышка",
+    "quantity": 56,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/1304516.jpg",
+      "http://mzimg.com/big/t1/fo8ap063bt1.jpg",
+      "http://mzimg.com/big/h1/fo8ap0i2dh1.jpg",
+      "http://mzimg.com/big/j1/fo8ap0la9j1.jpg"
     ],
-    'price': 40,
-    'discount': 0,
-    'sales': 7
+    "price": 6
   },
   {
-    'id': 'mikser-supra-hbs-831',
-    'title': 'Миксер Supra HBS-831',
-    'description': 'Крюк для подвешивания; Материал ножки блендера: металл; Питание: сеть; нож для измельчителя; Предустановленные программы: Насадки: ножка-блендер; Импульсный режим; Кол-во скоростей: 2; Мощность (Вт): 800; Емкость чаши (л): 0.35; Тип устройства: погружной блендер',
-    'quantity': 21,
-    'subcategory': {
-      'id': 'kuhnya',
-      'title': 'Кухня',
-      'count': 19,
-      'category': {
-        'id': 'melkaya-bytovaya-tehnika',
-        'title': 'Мелкая бытовая техника',
-        'count': 39,
-        'weight': 4
-      },
-      'weight': 1
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/311686.jpg',
-        'source': '311686.jpg'
-      }
+    "id": "soska-(pustyshka)-baby-frank-204892",
+    "title": "Соска (пустышка) Baby-Frank 204892",
+    "description": "кольцо; Материал: латекс; Форма: круглая; Возраст: 6m+; Тип: пустышка",
+    "quantity": 15,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": true,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/885699.jpg",
+      "http://mzimg.com/big/11/f6hp1c3mb11.jpg",
+      "http://mzimg.com/big/q1/f6hp1eyxpq1.jpg",
+      "http://mzimg.com/big/g1/f6hp1hd7eg1.jpg",
+      "http://mzimg.com/big/p1/f6hp1joq7p1.jpg"
     ],
-    'price': 13,
-    'discount': 0,
-    'sales': 7
+    "price": 3
   },
   {
-    'id': 'sushilka-dlya-belya-eurogold-0503sel',
-    'title': 'Сушилка для белья Eurogold 0503SEL',
-    'description': 'Вес (кг): 3.2; Размеры в разложенном виде (см): 180х60x101; Материал: сталь; Боковые крылья; Количество прутьев (шт): 18; Суммарная рабочая поверхность (м): 18; Конструкция: раскладная; Установка: напольная; Тип: обычная',
-    'quantity': 95,
-    'subcategory': {
-      'id': 'bytovye-pribory-dlya-doma',
-      'title': 'Бытовые приборы для дома',
-      'count': 10,
-      'category': {
-        'id': 'melkaya-bytovaya-tehnika',
-        'title': 'Мелкая бытовая техника',
-        'count': 39,
-        'weight': 4
-      },
-      'weight': 2
-    },
-    'status': 1,
-    'images': [
-      {
-        'url': 'http://magazilla.ru/jpg_zoom1/426353.jpg',
-        'source': '426353.jpg'
-      }
+    "id": "soska-(pustyshka)-baby-frank-204890",
+    "title": "Соска (пустышка) Baby-Frank 204890",
+    "description": "кольцо; Материал: латекс; Форма: круглая; Возраст: 0m+; Тип: пустышка",
+    "quantity": 20,
+    "category": "detskie-tovary-i-igrushki",
+    "subcategory": "kormlenie-i-gigiena",
+    "enabled": false,
+    "images": [
+      "http://magazilla.ru/jpg_zoom1/885694.jpg",
+      "http://mzimg.com/big/b1/f6howmhm0b1.jpg",
+      "http://mzimg.com/big/z1/f6howpmxcz1.jpg",
+      "http://mzimg.com/big/71/f6howsfj171.jpg",
+      "http://mzimg.com/big/o1/f6howxga3o1.jpg"
     ],
-    'price': 12,
-    'discount': 0,
-    'sales': 7
+    "price": 3
   }
 ];

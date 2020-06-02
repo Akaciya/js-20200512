@@ -117,7 +117,8 @@ export default class SortableTable {
       }
     };
 
-    const {sortType, customSorting} = column;
+    //const {sortType, customSorting} = column;
+    const sortType = column;
     const direction = order === 'asc' ? 1 : -1;
 
     return arr.sort((a, b) => {
@@ -136,18 +137,14 @@ export default class SortableTable {
 
   initEventListeners() {
     const allColumns = this.element.querySelectorAll('.sortable-table__cell[data-id]');
-    //button.addEventListener('click', clickHandler);
-    //this.headersConfig.forEach((item) => item.addEventListener(`click`, clickHandler));
-    //allColumns.forEach( (item) => item.addEventListener(`click`, this.handleEvent));
 
     allColumns.forEach( (item) => item.addEventListener(`click`, (event) =>{
-      let fieldValue =  item.dataset.id;
       if (item.dataset.order === 'asc') {
         item.dataset.order = 'desc';
       } else {
         item.dataset.order = 'asc';
       }
-      this.sort(fieldValue, item.dataset.order);
+      this.sort(item.dataset.id, item.dataset.order);
     }));
     //allColumns.forEach( (item) => item.addEventListener(`click`, this.handleEvent)); // не получилось сделать отдельно фунцию калбека
   };
@@ -168,7 +165,7 @@ export default class SortableTable {
   }
 
   destroy() {
-    this.remove();
+    this.element.remove();
     this.subElements = {};
   }
 }

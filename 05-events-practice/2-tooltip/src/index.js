@@ -1,11 +1,9 @@
 class Tooltip {
   element;
-  tooltipElement;
   tooltipText;
 
   eventHadler = (event) => {
-    this.tooltipElement = event.target;
-    this.tooltipText = this.tooltipElement.dataset.tooltip;
+    this.tooltipText = event.target.dataset.tooltip;
     if (!this.tooltipText) return;
     this.element.innerHTML = this.tooltipText;
     document.body.append(this.element);
@@ -15,13 +13,12 @@ class Tooltip {
   showPoint = (event)  => {
     this.element.style.left = event.clientX + 7 + 'px';
     this.element.style.top = event.clientY + 7 + 'px';
-    this.tooltipElement.addEventListener('pointerout', this.outPoint);
+    event.target.addEventListener('pointerout', this.outPoint);
   }
 
 
   outPoint = (event) => {
-    this.tooltipElement.removeEventListener('pointerout', this.outPoint);
-    this.tooltipElement.removeEventListener('pointerover', this.showPoint);
+    event.target.removeEventListener('pointerout', this.outPoint);
     this.remove();
   }
 

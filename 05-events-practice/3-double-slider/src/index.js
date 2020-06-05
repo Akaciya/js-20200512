@@ -1,5 +1,5 @@
 export default class DoubleSlider {
-  element;
+  /*element;
 
    constructor() {
     this.render();
@@ -21,6 +21,7 @@ export default class DoubleSlider {
     const element = document.createElement('div');
     element.innerHTML = this.SliderTemplate;
     this.element = element.firstElementChild;
+    document.body.append(this.element);
   }
 
 
@@ -31,5 +32,5 @@ export default class DoubleSlider {
   destroy() {
 
     this.remove();
-  }
+  }*/
 }

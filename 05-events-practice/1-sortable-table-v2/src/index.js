@@ -89,9 +89,10 @@ export default class SortableTable {
   }
 
   sort(field, order) {
+    const currentColumn = this.element.querySelector(`.sortable-table__cell[data-id="${field}"]`);
     const sortedData = this.sortData(field, order);
     const allColumns = this.element.querySelectorAll('.sortable-table__cell[data-id]');
-    const currentColumn = this.element.querySelector(`.sortable-table__cell[data-id="${field}"]`);
+
 
     // NOTE: Remove sorting arrow from other columns
     allColumns.forEach(column => {
@@ -107,20 +108,19 @@ export default class SortableTable {
     const arr = [...this.data];
     const column = this.headersConfig.find(item => item.id === field);
 
+    const {sortType, customSorting} = column;
+    const direction = order === 'asc' ? 1 : -1;
+
     // примерно как-то так для custom, но это может неправильно ?
+
     this.customSorting = (a, b) => {
       if (typeof a[field] === "boolean") {
-        return a[field] && b[field];
+        return a[field] - b[field];
       }
       if (typeof a[field] === "string") {
         return a[field].localeCompare(b[field], 'ru');
       }
     };
-
-    //const {sortType, customSorting} = column;
-    const sortType = column;
-    const direction = order === 'asc' ? 1 : -1;
-
     return arr.sort((a, b) => {
       switch (sortType) {
         case 'number':
@@ -139,12 +139,15 @@ export default class SortableTable {
     const allColumns = this.element.querySelectorAll('.sortable-table__cell[data-id]');
 
     allColumns.forEach( (item) => item.addEventListener(`click`, (event) =>{
-      if (item.dataset.order === 'asc') {
-        item.dataset.order = 'desc';
-      } else {
-        item.dataset.order = 'asc';
+      if (item.dataset.sortable === 'true') {
+        if (item.dataset.order === 'asc') {
+          item.dataset.order = 'desc';
+        } else {
+          item.dataset.order = 'asc';
+        }
+        this.sort(item.dataset.id, item.dataset.order);
       }
-      this.sort(item.dataset.id, item.dataset.order);
+
     }));
     //allColumns.forEach( (item) => item.addEventListener(`click`, this.handleEvent)); // не получилось сделать отдельно фунцию калбека
   };

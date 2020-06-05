@@ -110,7 +110,7 @@ export default class SortableTable {
     // примерно как-то так для custom, но это может неправильно ?
     this.customSorting = (a, b) => {
       if (typeof a[field] === "boolean") {
-        return a[field] - b[field];
+        return a[field] && b[field];
       }
       if (typeof a[field] === "string") {
         return a[field].localeCompare(b[field], 'ru');

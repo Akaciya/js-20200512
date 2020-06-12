@@ -24,7 +24,6 @@ export default class SortableTable {
       column.dataset.order = order === 'asc' ?  'desc' : 'asc';
 
       this.sorted = {
-        ...this.sorted,
         _sort: columnId,
         _order: column.dataset.order,
       };

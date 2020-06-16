@@ -34,14 +34,8 @@ export default class ProductForm {
         const urlImage = response.data.link;
         this.imageListContainer.append(this.itemImageTemplate({url:urlImage, name:itemFile.name}));
         const imageLiItem = this.itemImageTemplate({url:urlImage, name:itemFile.name});
-        console.log(this.itemImageTemplate({url:urlImage, name:itemFile.name}));
         if (urlImage) {
-          //imageLiItem.querySelector('[data-delete-handle]').addEventListener('pointerdown', event => this.deleteImage);
-          //imageLiItem.addEventListener('click', event => this.deleteImage(event));
-
-          console.log(imageLiItem.querySelector('[data-delete-handle]'));
-
-          //this.deleteImage();
+           console.log(imageLiItem.querySelector('[data-delete-handle]'));
         }
 
       } catch (err) {
@@ -54,9 +48,7 @@ export default class ProductForm {
 
   deleteImage = (event) =>  {
 
-    console.log(event.target, 1);
     if ( event.target === this.form.querySelector('[data-delete-handle]')) {
-      console.log(event.target, 2);
       event.target.closest('li').remove();
 
     }
@@ -72,7 +64,7 @@ export default class ProductForm {
     this.urlProductPost = new URL('/api/rest/products', BACKEND_URL);
 
     this.render();
-    //this.initClickUploadImage();
+
   }
 
   render() {
@@ -89,9 +81,9 @@ export default class ProductForm {
     this.imageListContainer = this.form.querySelector('[data-element="imageListContainer"]').firstElementChild;
     this.form.addEventListener('submit', event => this.onSubmit(event));
     this.initClickUploadImage();
-    //console.log(this.form.querySelector('[data-delete-handle]'));
+
     this.initDeleteImage();
-    //this.deleteImage();
+
     return this.element;
   }
 
@@ -178,9 +170,8 @@ export default class ProductForm {
     this.form.uploadImage.addEventListener('click', this.loadImage);
   }
   initDeleteImage() {
-   //if(this.imageListContainer.children.length) {
+
      this.imageListContainer.addEventListener('click', this.deleteImage);
-   //}
 
   }
 
@@ -291,8 +282,7 @@ export default class ProductForm {
   }
 
   destroy() {
-    //this.element.innerHTML= '';
-//    this.remove();
+
     this.subElements = {};
     this.element = null;
   }

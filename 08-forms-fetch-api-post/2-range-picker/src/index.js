@@ -62,7 +62,7 @@ export default class RangePicker {
         const timeDiff = Math.abs(this.dateTo.getTime() - this.dateFrom.getTime());
         const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
-        console.log(diffDays + " days");
+        //console.log(diffDays + " days");
 
         if (this.dateTo.getTime() < this.dateFrom.getTime()) {
           [this.dateFrom, this.dateTo] = [this.dateTo, this.dateFrom];

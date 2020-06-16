@@ -34,9 +34,9 @@ export default class ProductForm {
         const urlImage = response.data.link;
         this.imageListContainer.append(this.itemImageTemplate({url:urlImage, name:itemFile.name}));
         const imageLiItem = this.itemImageTemplate({url:urlImage, name:itemFile.name});
-        if (urlImage) {
+       /* if (urlImage) {
            console.log(imageLiItem.querySelector('[data-delete-handle]'));
-        }
+        }*/
 
       } catch (err) {
         throw err;

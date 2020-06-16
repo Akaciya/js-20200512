@@ -16,27 +16,51 @@ export default class ProductForm {
     const inputFile = document.createElement('input');
     inputFile.type = "file";
     inputFile.accept = "image/*";
-
+    inputFile.click();
 
     inputFile.onchange = async () => {
       const itemFile = inputFile.files[0];
       if (!itemFile) return;
       const formData = new FormData;
       formData.append('image', itemFile);
-      const response =  await fetchJson(IMGUR_URL, {
-        method : "POST",
-        headers: {Authorization: `Client-ID ${IMGUR_CLIENT_ID}`},
-        body   : formData
-      });
+      this.form.uploadImage.classList.add("is-loading");
+      try {
+        const response =  await fetchJson(IMGUR_URL, {
+          method : "POST",
+          headers: {Authorization: `Client-ID ${IMGUR_CLIENT_ID}`},
+          body   : formData
+        });
+        this.form.uploadImage.classList.remove("is-loading");
+        const urlImage = response.data.link;
+        this.imageListContainer.append(this.itemImageTemplate({url:urlImage, name:itemFile.name}));
+        const imageLiItem = this.itemImageTemplate({url:urlImage, name:itemFile.name});
+        console.log(this.itemImageTemplate({url:urlImage, name:itemFile.name}));
+        if (urlImage) {
+          //imageLiItem.querySelector('[data-delete-handle]').addEventListener('pointerdown', event => this.deleteImage);
+          //imageLiItem.addEventListener('click', event => this.deleteImage(event));
 
-      const urlImage = response.data.link;
+          console.log(imageLiItem.querySelector('[data-delete-handle]'));
 
-      this.imageListContainer.append(this.itemImageTemplate({url:urlImage, name:itemFile.name}));
+          //this.deleteImage();
+        }
 
-    };
-    inputFile.click();
+      } catch (err) {
+        throw err;
+      }
+
   };
 
+  };
+
+  deleteImage = (event) =>  {
+
+    console.log(event.target, 1);
+    if ( event.target === this.form.querySelector('[data-delete-handle]')) {
+      console.log(event.target, 2);
+      event.target.closest('li').remove();
+
+    }
+  };
 
   constructor(productId='') {
 
@@ -46,6 +70,9 @@ export default class ProductForm {
     this.urlCategory.searchParams.set('_refs', 'subcategory');
 
     this.urlProductPost = new URL('/api/rest/products', BACKEND_URL);
+
+    this.render();
+    //this.initClickUploadImage();
   }
 
   render() {
@@ -62,7 +89,10 @@ export default class ProductForm {
     this.imageListContainer = this.form.querySelector('[data-element="imageListContainer"]').firstElementChild;
     this.form.addEventListener('submit', event => this.onSubmit(event));
     this.initClickUploadImage();
+    //console.log(this.form.querySelector('[data-delete-handle]'));
+    this.initDeleteImage();
     //this.deleteImage();
+    return this.element;
   }
 
   onSubmit(event) {
@@ -147,18 +177,13 @@ export default class ProductForm {
   initClickUploadImage() {
     this.form.uploadImage.addEventListener('click', this.loadImage);
   }
-  /*deleteImage() {
-   //console.log(this.form.querySelector('[data-delete-handle]'));
+  initDeleteImage() {
+   //if(this.imageListContainer.children.length) {
+     this.imageListContainer.addEventListener('click', this.deleteImage);
+   //}
 
-    //const deleteImg = this.form.querySelector('[data-delete-handle]');
-    if (this.imageListContainer.length) {
+  }
 
-      const deleteImg = this.form.querySelector('[data-delete-handle]');
-      deleteImg.addEventListener('click', (event) => event.target.closest('li').remove());
-    }
-
-    //console.log(this.form.querySelector('[data-delete-handle]'));
-  }*/
 
   itemImageTemplate({url = '', name = ''}) {
     const liItem = document.createElement("li");
@@ -266,9 +291,10 @@ export default class ProductForm {
   }
 
   destroy() {
-    this.element.innerHTML= '';
-
-//    this.subElements = {};
+    //this.element.innerHTML= '';
+//    this.remove();
+    this.subElements = {};
+    this.element = null;
   }
 }
 //npm run test:specific --findRelatedTests 08-forms-fetch-api-post/1-product-form-v1/src/index.spec.js

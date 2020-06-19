@@ -3,7 +3,7 @@ import fetchJson from './utils/fetch-json.js';
 const BACKEND_URL = 'https://course-js.javascript.ru';
 
 export default class SortableTable {
-  element;
+ /* element;
   subElements = {};
   headersConfig = [];
   data = [];
@@ -85,7 +85,7 @@ export default class SortableTable {
       this.subElements.body.innerHTML = response.statusText;
     }
 
-    /* //альтернатива
+    /!* //альтернатива
      let response = await fetch(url);
      const loading = `<div data-element="loading" class="loading-line sortable-table__loading-line"></div>`;
      const noData = `<div data-element="emptyPlaceholder" class="sortable-table__empty-placeholder">
@@ -121,7 +121,7 @@ export default class SortableTable {
      let result = new TextDecoder("utf-8").decode(arrDataAll);
      this.data = JSON.parse(result);
      console.log(this.data);
-     this.subElements.body.innerHTML = this.getTableRows(this.data);*/
+     this.subElements.body.innerHTML = this.getTableRows(this.data);*!/
   }
 
   getTableHeader() {
@@ -240,6 +240,6 @@ export default class SortableTable {
   destroy() {
     this.remove();
     this.subElements = {};
-  }
+  }*/
 }
 //npm run test:specific --findRelatedTests 07-forms-fetch-api-part-2/2-sortable-table-v3/src/index.spec.js

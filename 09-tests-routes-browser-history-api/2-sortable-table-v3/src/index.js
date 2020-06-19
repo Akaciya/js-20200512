@@ -3,12 +3,40 @@ import fetchJson from './utils/fetch-json.js';
 const BACKEND_URL = 'https://course-js.javascript.ru';
 
 export default class SortableTable {
- /* element;
+  element;
   subElements = {};
   headersConfig = [];
   data = [];
+  start;
+  step = 20;
+  end;
+  loading = false;
 
-  sortOnServer = event => {
+  infinityScroll = async(event) => {
+
+    const tableHeight = this.element.offsetHeight;
+    const scrollCurrent = window.pageYOffset;
+    const innerHeight = window.innerHeight;
+    const endTable = scrollCurrent + innerHeight;
+
+    if(endTable >= tableHeight && !this.loading) {
+      this.loading = true;
+
+      this.start = this.end;
+      this.end = this.start + this.step;
+
+      this.element.classList.add("sortable-table_loading");
+
+      const newData = await this.getData(this.getUrl());
+
+      this.update(newData);
+
+      this.element.classList.remove("sortable-table_loading");
+      this.loading = false;
+    }
+  };
+
+  sortOnServer = async(event) => {
     const columnId =  event.target.closest('[data-id]').dataset.id;
 
     const column = event.target.closest('[data-sortable="true"]');
@@ -27,10 +55,11 @@ export default class SortableTable {
         _sort: columnId,
         _order: column.dataset.order,
       };
-
-      this.getData(this.getUrl());
+      this.start = 0;
+      this.end = this.step;
+      this.subElements.body.innerHTML = '';
+      this.subElements.body.innerHTML += this.getTableRows(await this.getData(this.getUrl()));
     }
-
   };
 
   constructor(headersConfig, {url = ''} = {}) {
@@ -41,16 +70,17 @@ export default class SortableTable {
     };
 
     this.url = `${BACKEND_URL}/${url}`;
+    this.start = 0;
+    this.end = 20;
     this.render();
   }
 
-  getUrl(start = 0, end = 30) {
-
+  getUrl() {
     this.params = {
       _sort: this.sorted._sort,
       _order: this.sorted._order || 'asc',
-      _start: start,
-      _end: end
+      _start: this.start,
+      _end: this.end
     };
 
     this.paramsUrl = new URLSearchParams(this.params).toString();
@@ -59,71 +89,21 @@ export default class SortableTable {
   }
 
   async getData(url) {
-    const response = await fetch(url);
-
-    const loading = `<div data-element="loading" class="loading-line sortable-table__loading-line"></div>`;
-    const noData = `<div data-element="emptyPlaceholder" class="sortable-table__empty-placeholder">
-          По заданному критерию запроса данные отсутствуют
-        </div>`;
 
     this.element.classList.add('sortable-table_loading');
     this.subElements.body.classList.add('sortable-table_empty');
-    this.subElements.body.innerHTML = loading;
 
-    if (response.status === 200) {
-      this.jsonObj = await response.json();
-      this.data = Object.values(this.jsonObj);
+    const data = await fetchJson(url);
 
-      this.element.classList.remove('sortable-table_loading');
-      this.subElements.body.classList.remove('sortable-table_empty');
+    this.element.classList.remove('sortable-table_loading');
+    this.subElements.body.classList.remove('sortable-table_empty');
 
-      if (!this.data.length) {
-        this.subElements.body.innerHTML = noData;
-      }
-      this.subElements.body.innerHTML = this.getTableRows(this.data);
-    } else {
-      this.subElements.body.innerHTML = response.statusText;
-    }
+    return data;
 
-    /!* //альтернатива
-     let response = await fetch(url);
-     const loading = `<div data-element="loading" class="loading-line sortable-table__loading-line"></div>`;
-     const noData = `<div data-element="emptyPlaceholder" class="sortable-table__empty-placeholder">
-           По заданному критерию запроса данные отсутствуют
-         </div>`;
-     this.element.classList.add('sortable-table_loading');
-     this.subElements.body.classList.add('sortable-table_empty');
-     this.subElements.body.innerHTML = loading;
-     const reader = response.body.getReader();
-     // Шаг 2: получаем длину содержимого ответа
-     const contentLength = +response.headers.get('Content-Length');
-     // Шаг 3: считываем данные:
-     let receivedLength = 0; // количество байт, полученных на данный момент
-     this.data = []; // массив полученных двоичных фрагментов (составляющих тело ответа)
-     while(true) {
-       const {done, value} = await reader.read();
-       if (done) {
-         this.element.classList.remove('sortable-table_loading');
-         this.subElements.body.classList.remove('sortable-table_empty');
-         break;
-       }
-       this.data.push(value);
-       receivedLength += value.length;
-     }
-   // Шаг 4: соединим фрагменты в общий типизированный массив Uint8Array
-     let arrDataAll = new Uint8Array(receivedLength);
-     let position = 0;
-     for(let dataItem of this.data) {
-       arrDataAll.set(dataItem, position);
-       position += dataItem.length;
-     }
-   // Шаг 5: декодируем Uint8Array обратно в строку
-     let result = new TextDecoder("utf-8").decode(arrDataAll);
-     this.data = JSON.parse(result);
-     console.log(this.data);
-     this.subElements.body.innerHTML = this.getTableRows(this.data);*!/
   }
-
+  update(data) {
+      this.subElements.body.innerHTML += this.getTableRows(data);
+  }
   getTableHeader() {
     return `<div data-element="header" class="sortable-table__header sortable-table__row">
       ${this.headersConfig.map(item => this.getHeaderRow(item)).join('')}
@@ -157,9 +137,10 @@ export default class SortableTable {
   }
 
   getTableRows (data) {
+
     return data.map(item => `
       <div class="sortable-table__row">
-        ${this.getTableRow(item, data)}
+        ${this.getTableRow(item)}
       </div>`
     ).join('');
   }
@@ -184,23 +165,31 @@ export default class SortableTable {
       <div class="sortable-table">
         ${this.getTableHeader()}
          ${this.getTableBody(data)}
+         <div data-element="loading" class="loading-line sortable-table__loading-line"></div>
+         <div data-element="emptyPlaceholder" class="sortable-table__empty-placeholder">
+          По заданному критерию запроса данные отсутствуют
+        </div>
       </div>
       </div>`;
   }
 
-  render() {
+  async render() {
     const wrapper = document.createElement('div');
     wrapper.innerHTML = this.getTable(this.data);
     const element = wrapper.firstElementChild;
 
     this.element = element;
     this.subElements = this.getSubElements(element);
+    const data = await this.getData(this.getUrl());
+
+    this.subElements.body.innerHTML = this.getTableRows(data);
     this.initEventListeners();
-    return this.getData(this.getUrl());
+    return data;
   }
 
   initEventListeners() {
     this.subElements.header.addEventListener('pointerdown', this.sortOnServer);
+    document.addEventListener('scroll', this.infinityScroll);
   }
 
   //sorting in the backend
@@ -235,11 +224,12 @@ export default class SortableTable {
 
   remove() {
     this.element.remove();
+    document.removeEventListener('scroll', this.infinityScroll);
   }
 
   destroy() {
     this.remove();
     this.subElements = {};
-  }*/
+  }
 }
 //npm run test:specific --findRelatedTests 07-forms-fetch-api-part-2/2-sortable-table-v3/src/index.spec.js

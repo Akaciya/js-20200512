@@ -1,4 +1,4 @@
-import SortableList from '../../../09-tests-routes-browser-history-api/1-sortable-list/solution/index.js';
+import SortableList from '../../../09-tests-routes-browser-history-api/1-sortable-list/src/index.js';
 import escapeHtml from './utils/escape-html.js';
 import fetchJson from './utils/fetch-json.js';
 
